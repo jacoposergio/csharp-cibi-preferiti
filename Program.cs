@@ -101,7 +101,7 @@
 //    int numeroUtente = Convert.ToInt32(Console.ReadLine());
 //    sommaNumeri += numeroUtente;
 //};
-//return sommaNumeri;
+//Console.WriteLine("La somma è: " + sommaNumeri);
 
 
 
@@ -119,7 +119,7 @@
 //    mediaNumeri = sommaNumeri / i;
 //};
 
-//return mediaNumeri;
+//Console.WriteLine("La somma è " + sommaNumeri + ", la media è " +  mediaNumeri);
 
 
 //******************************************************************************************************* 
@@ -169,4 +169,23 @@
 //Snack7.Crea un array vuoto.
 //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo
 //nell’array.
+
+int[] arrayNumeri = new int[6];
+
+for (int i = 0; i < 6; i++)
+{
+    Console.WriteLine("Inserisci un numero");
+    int numeroUtente = Convert.ToInt32(Console.ReadLine());
+
+    if (numeroUtente % 2 != 0)
+    {
+        arrayNumeri[i] = numeroUtente;
+    }
+
+}
+
+for (int i = 0; i < arrayNumeri.Length; i++)
+{
+    Console.Write(arrayNumeri[i]);
+}
 
