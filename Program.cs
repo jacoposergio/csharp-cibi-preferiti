@@ -11,12 +11,12 @@ Console.WriteLine("Classifica migliori cibi:");
 
 for (int i = 0; i < CibiPreferiti.Length; i++ )
 {
-    Console.WriteLine((i + 1) + "°" + "" + "posto:" + "" + CibiPreferiti[i]);
+    Console.WriteLine((i + 1) + "°" + " " + "posto:" + " " + CibiPreferiti[i]);
 };
 
 //migliore e peggiore
 Console.WriteLine("cibo top: " + CibiPreferiti[0]);
-Console.WriteLine("cibo meno top: " + CibiPreferiti[6]);
+Console.WriteLine("cibo meno top: " + CibiPreferiti[CibiPreferiti.Length - 1]);
 
 //medio
 Console.WriteLine("cibo mezza classifica pari: " + CibiPreferiti[CibiPreferiti.Length / 2]);
