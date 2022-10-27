@@ -25,3 +25,5 @@ Console.WriteLine("settimo posto: " + CibiPreferiti[6]);
 
 Console.WriteLine("cibo top: " + CibiPreferiti[3]);
 Console.WriteLine("cibo meno top: " + CibiPreferiti[6]);
+
+Console.WriteLine("cibo mezza classifica: " + CibiPreferiti[(CibiPreferiti.Length / 2) + 1]);
