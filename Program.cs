@@ -116,10 +116,10 @@
 //for (int i = 2; i <= 10; i++)
 //{
 //    sommaNumeri += i;
-//    mediaNumeri = sommaNumeri / i;
 //};
+//mediaNumeri = sommaNumeri / 9;
 
-//Console.WriteLine("La somma è " + sommaNumeri + ", la media è " +  mediaNumeri);
+//Console.WriteLine("La somma è " + sommaNumeri + ", la media è " + mediaNumeri);
 
 
 //******************************************************************************************************* 
@@ -155,13 +155,22 @@
 //Console.WriteLine("Dimmi il tuo nome");
 //string nomeUtente = Console.ReadLine();
 
-//if (invitati.Contains(nomeUtente) )
+//bool isUserInList = false;
+
+//for (int i = 0; i < invitati.Length; i++)
 //{
-//    Console.WriteLine("Benvenuto e buona serata");
+//    if (nomeUtente == invitati[i])
+//    {
+//        isUserInList = true;
+//    }
+//}
+//if (isUserInList)
+//{
+//    Console.WriteLine("benvenuto/a alla grande festa!");
 //}
 //else
 //{
-//    Console.WriteLine("Va via straccione o chiamo le guardie");
+//    Console.WriteLine("mi spiace ma il tuo nome non è presente nella lista dei partecipanti");
 //}
 
 //******************************************************************************************************* 
