@@ -179,22 +179,164 @@
 //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo
 //nell’array.
 
-int[] arrayNumeri = new int[6];
+//int[] arrayNumeri = new int[6];
 
-for (int i = 0; i < 6; i++)
+//for (int i = 0; i < 6; i++)
+//{
+//    Console.WriteLine("Inserisci un numero");
+//    int numeroUtente = Convert.ToInt32(Console.ReadLine());
+
+//    if (numeroUtente % 2 != 0)
+//    {
+//        arrayNumeri[i] = numeroUtente;
+//    }
+
+//}
+
+//for (int i = 0; i < arrayNumeri.Length; i++)
+//{
+//    Console.Write(arrayNumeri[i]);
+//}
+
+//******************************************************************************************************* 
+
+//Snack8.Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in
+//posizione dispari.
+
+//int[] arrayTest = { 2, 0, 7, 0, 3, 0 };
+
+//int sommaDispari = 0;
+//for (int i = 1; i < arrayTest.Length; i+= 2)
+//{
+//    sommaDispari += arrayTest[i];
+//}
+
+//Console.WriteLine("La somma dei numeri in posizione dispari è: " + sommaDispari);
+
+//******************************************************************************************************* 
+
+//Snack9.Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.
+//Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la
+//somma degli elementi è minore di 50.
+
+//int[] arrayNumeri = new int[50];
+
+//int arraySum = 0;
+//int i=0;
+
+//while (arraySum <= 49)
+//{
+//    Console.WriteLine("Inserisci un numero");
+//    int numeroUtente = Convert.ToInt32(Console.ReadLine());
+//    if(arraySum < 50)
+//    {
+//    arrayNumeri[i] = numeroUtente;
+//    arraySum += numeroUtente;
+//    i++;
+//    Console.WriteLine("La somma degli elementi è " + arraySum );
+//    }
+//    else
+//    {
+//        Console.WriteLine("Hai sballato");
+//    }
+//}
+
+//Snack10.Fai inserire un numero, che chiameremo N, all’utente.
+//Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
+//Ogni volta che ne crei uno, stampalo a schermo.
+
+//using System;
+
+//Console.WriteLine("Inserisci una numero");
+//int N = Convert.ToInt32(Console.ReadLine());
+
+
+//for(int i = 0; i < N; i++)
+//{
+//    int[] arrayCasuale = new int[10];
+
+//    for(int j = 0; j < arrayCasuale.Length; j++)
+//    {
+//        Random rnd = new Random();
+//        arrayCasuale[j] = rnd.Next(1, 100);
+//    }
+//   Console.WriteLine(arrayCasuale);
+
+//    for (int k = 0; k < arrayCasuale.Length; k++)
+//    {
+//        if (k < arrayCasuale.Length - 1)
+//        {
+//            Console.Write(arrayCasuale[k] + " - ");
+//        }
+//        else
+//        {
+//            Console.Write(arrayCasuale[k]);
+//        }
+//    }
+//}
+
+
+//Snack 1
+//Dare la possibilità di inserire due parole.
+//Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.
+//Se hanno la stessa lunghezza, stamparle entrambe, altrimenti stampare la più lunga delle due.
+
+
+//string wordLengthCheck(string word1, string word2)
+//{
+//    if (word1.Length > word2.Length)
+//    {
+//        return word1;
+//    }
+//    else if (word1.Length < word2.Length)
+//    {
+//        return word2;
+//    }
+//    else
+//    {
+//        return word1 + " e " + word2;
+//    }
+//}
+
+//Console.WriteLine("Inserisci una parola");
+//string parola1 = Console.ReadLine();
+
+//Console.WriteLine("Inserisci un'altra parola");
+//string parola2 = Console.ReadLine();
+
+//string finalWord = wordLengthCheck(parola1, parola2);
+
+//Console.WriteLine("la parola richiesta è: " + finalWord);
+
+
+//Snack 2
+//Scrivere una funzione per verificare se un numero è pari o dispari.
+//Quindi chiedere un numero all’utente e comunicargli se è pari o dispari.
+
+
+string evenOrOdd(int numberToCheck)
 {
-    Console.WriteLine("Inserisci un numero");
-    int numeroUtente = Convert.ToInt32(Console.ReadLine());
-
-    if (numeroUtente % 2 != 0)
+    if (numberToCheck % 2 == 0)
     {
-        arrayNumeri[i] = numeroUtente;
+        return "pari";
     }
-
+    else
+    {
+        return "dispari";
+    }
 }
 
-for (int i = 0; i < arrayNumeri.Length; i++)
-{
-    Console.Write(arrayNumeri[i]);
-}
+Console.WriteLine("Inserisci una numero");
+int userNumber = Convert.ToInt32(Console.ReadLine());
+
+string isEvenOrOdd = evenOrOdd(userNumber);
+
+Console.WriteLine("Il numero che hai scelto è: " + isEvenOrOdd);
+
+
+
+
+
+
+
 
